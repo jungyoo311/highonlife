@@ -21,6 +21,7 @@ class Solution:
         
         #if using minHeap, i can easily return the max 2 of the records list.
         # min heap implementations
+        # 2nd approach
         import heapq
         freq = {} #freq map
         for num in nums:
