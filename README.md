@@ -37,3 +37,12 @@ BW [Gbps]: 1.20
 `
 low-latency: High BW
 high-latency: low BW
+
+# Difference Between sorted() and .sort()
+list = [1,3,4,2]
+1. sorted(list); Does NOT modify original height. Returns a new sorted list
+2. list.sort(); Sorts the list in-place, it modifies height; Reutnrs None by python design;
+
+list.sort()
+list
+will print out sorted list
