@@ -20,7 +20,7 @@ ad-hoc: when it's needed or necessary
 3. runs inference using hardward only execution (no input)
 4. prepare benchmark table
 5. output will be
-`Starting HW infer Estimator...
+```Starting HW infer Estimator...
 
 ======================
         Summary
@@ -34,7 +34,7 @@ BW [Gbps]: 1.20
 ======================
     End of report
 ======================
-`
+```
 low-latency: High BW
 high-latency: low BW
 
