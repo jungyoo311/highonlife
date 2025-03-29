@@ -51,7 +51,7 @@ will print out sorted list
 Explore each branch completely before moving on to the next branch.
 We go DEEP first before we go WIDE
 pseudocode
-`
+```
 def search(Node root):
     if root == null return
     visit(root)
@@ -59,12 +59,12 @@ def search(Node root):
     for each Node in in root.adjacent:
         if n.visited == false:
             search(n)
-`
+```
 # Breath First Search
 Explore each neighbor before going on to any of their children.
 We go WIDE before we go DEEP
 pseudocode
-`
+```
 def search(Node root):
     Queue queue = new Queue()
     root.marked = true
@@ -75,4 +75,4 @@ def search(Node root):
         for each Node n in r.adjacent:
             n.marked = true
             queue.enqueue(n)
-`
+```
