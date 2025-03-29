@@ -53,12 +53,12 @@ We go DEEP first before we go WIDE
 pseudocode
 ```
 def search(Node root):
-    if root == null return
-    visit(root)
-    root.visited = true
-    for each Node in in root.adjacent:
-        if n.visited == false:
-            search(n)
+    if root == null return # Base case: If input node is null, return null
+    visit(root) # visit the node
+    root.visited = true # Mark the current node as visited
+    for each Node in in root.adjacent: # Loop through all the neighbors(adjacent nodes) of the current node
+        if n.visited == false: # Check if the neighbor n has not been visited yet, if it hasn't been visited, explore it next.
+            search(n) # recursively call search() on the neighbor n
 ```
 # Breath First Search
 Explore each neighbor before going on to any of their children.
