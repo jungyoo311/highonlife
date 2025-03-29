@@ -46,3 +46,33 @@ list = [1,3,4,2]
 list.sort()
 list
 will print out sorted list
+
+# Depth First Search
+Explore each branch completely before moving on to the next branch.
+We go DEEP first before we go WIDE
+pseudocode
+`
+def search(Node root):
+    if root == null return
+    visit(root)
+    root.visited = true
+    for each Node in in root.adjacent:
+        if n.visited == false:
+            search(n)
+`
+# Breath First Search
+Explore each neighbor before going on to any of their children.
+We go WIDE before we go DEEP
+pseudocode
+`
+def search(Node root):
+    Queue queue = new Queue()
+    root.marked = true
+    queue.enqueue(root) // add to the end of the queue
+    while !queue.isEmpty():
+        Node r = queue.dequeue() //Remove from the front of the queue
+        visit(r)
+        for each Node n in r.adjacent:
+            n.marked = true
+            queue.enqueue(n)
+`
