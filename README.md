@@ -56,7 +56,7 @@ def search(Node root):
     if root == null return # Base case: If input node is null, return null
     visit(root) # visit the node
     root.visited = true # Mark the current node as visited
-    for each Node in in root.adjacent: # Loop through all the neighbors(adjacent nodes) of the current node
+    for each Node n in root.adjacent: # Loop through all the neighbors(adjacent nodes) of the current node
         if n.visited == false: # Check if the neighbor n has not been visited yet, if it hasn't been visited, explore it next.
             search(n) # recursively call search() on the neighbor n
 ```
@@ -66,13 +66,13 @@ We go WIDE before we go DEEP
 pseudocode
 ```
 def search(Node root):
-    Queue queue = new Queue()
-    root.marked = true
-    queue.enqueue(root) // add to the end of the queue
-    while !queue.isEmpty():
-        Node r = queue.dequeue() //Remove from the front of the queue
-        visit(r)
-        for each Node n in r.adjacent:
-            n.marked = true
-            queue.enqueue(n)
+    Queue queue = new Queue() # creates new Queue
+    root.marked = true # Marks the root node as visited
+    queue.enqueue(root) // add to the end of the queue # Adds the root node to the queue
+    while !queue.isEmpty(): # While queue is not empty, keep exploring
+        Node r = queue.dequeue() //Remove r from the front of the queue
+        visit(r) # Processes the node
+        for each Node n in r.adjacent: # iterates through each of node r's neighbors - the nodes it's directly connected to. 
+            n.marked = true # marks neighbor node n as visited
+            queue.enqueue(n) # Adds neighbor n to the back of the queue so it can be vistied in future iterations. 
 ```
