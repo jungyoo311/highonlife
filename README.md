@@ -68,9 +68,9 @@ pseudocode
 def search(Node root):
     Queue queue = new Queue() # creates new Queue
     root.marked = true # Marks the root node as visited
-    queue.enqueue(root) // add to the end of the queue # Adds the root node to the queue
+    queue.enqueue(root) #  Add to the end of the queue # Adds the root node to the queue
     while !queue.isEmpty(): # While queue is not empty, keep exploring
-        Node r = queue.dequeue() //Remove r from the front of the queue
+        Node r = queue.dequeue() # Remove r from the front of the queue
         visit(r) # Processes the node
         for each Node n in r.adjacent: # iterates through each of node r's neighbors - the nodes it's directly connected to. 
             n.marked = true # marks neighbor node n as visited
