@@ -76,3 +76,6 @@ def search(Node root):
             n.marked = true # marks neighbor node n as visited
             queue.enqueue(n) # Adds neighbor n to the back of the queue so it can be vistied in future iterations. 
 ```
+
+# Union Find(Disjoint-Set)
+
