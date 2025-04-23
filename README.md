@@ -1,5 +1,9 @@
 # highonlife
 정무의 취준 일기
+# New-Grad Job Postings
+`
+https://www.newgrad-jobs.com/?k=aiml
+`
 
 # Hailort CLI Case Study
 usage of CMAKE: Mange building across OS. Top level CmakeLists sets up the project and includes subdirectories for each component. Using Cmake with clearly separated modules is a best practice for scalability. It allows optional components and platform differences to be managed easily. 
@@ -77,5 +81,5 @@ def search(Node root):
             queue.enqueue(n) # Adds neighbor n to the back of the queue so it can be vistied in future iterations. 
 ```
 
-# Union Find(Disjoint-Set)
+# Priority Queue
 
